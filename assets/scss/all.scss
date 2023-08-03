@@ -1,5 +1,9 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./base/reset.scss";
+@import "./base/base.scss";
+@import "./utils/utils";
+@import "./variables.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
 
 
-@import './pages/index.scss';
+@import "./pages/index.scss";

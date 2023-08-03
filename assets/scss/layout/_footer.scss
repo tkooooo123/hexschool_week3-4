@@ -1,4 +1,115 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background: $primary;
+
+}
+
+.footer-nav {
+  padding-top: 48px;
+  padding-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-nav-item {
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon-list {
+  &-item {
+    margin-right: 32px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .icon-img {
+    height: 48px;
+  }
+}
+
+.footer-contact {
+  width: 100%;
+  margin-top: 24px;
+  color: #fff;
+  font-size: 36px;
+
+  .contact-icon {
+    font-size: 36px;
+    margin-right: 22px;
+  }
+}
+
+.footer-hr {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.text {
+  color: #fff;
+  padding: 32px 0;
+
+  .list-item {
+    margin-right: 48px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include phone {
+  .footer-nav {
+    padding: 24px 12px;
+    flex-flow: row-reverse nowrap;
+  }
+
+  .footer-nav-list {
+    display: none;
+  }
+
+  .icon-list {
+    align-self: flex-start;
+    &-item {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .icon-img {
+      height: 24px;
+    }
+  }
+
+  .footer-contact {
+    width: auto;
+    margin-top: 0;
+    color: #fff;
+    font-size: 16px;
+
+    .contact-icon {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
+
+  .text {
+    display: block;
+    padding: 16px 0 24px;
+  }
+
+  .text-list {
+    display: block;
+
+    .list-item {
+      margin-top: 8px;
+    }
+  }
+
 }

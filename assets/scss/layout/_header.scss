@@ -1,4 +1,51 @@
+
+
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  height: 80px;
+  background: $primary;
+  color: #fff;
 }
+.nav {
+  height: 100%;
+  .nav-brand img{
+    height: 49px;
+  }
+  .nav-item {
+    font-size: 20px;
+    margin-right: 64px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@include phone {
+  .header .container {
+    padding: 0;
+  }
+  .header {
+    height: auto;
+   
+  }
+  .nav {
+    display: block;
+    .nav-brand {
+      margin-left: 15px;
+      height: 80px;
+      justify-content: start;
+    }
+    .nav-list {
+      flex-wrap: wrap;
+    }
+    .nav-item {
+      width: calc(50% - 2px);
+      padding: 12px 0;
+      margin-right: 0;
+      border: 1px solid #fff;
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+ 
+  }
+
