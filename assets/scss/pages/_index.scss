@@ -1,3 +1,215 @@
 .index-title {
   font-size: 100px;
 }
+
+.banner {
+  background: center/cover no-repeat url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  padding: 296px 0;
+  text-align: right;
+
+  p {
+    font-size: 36px;
+    color: $secondary;
+  }
+
+  h1 {
+    font-size: 64px;
+    color: $secondary;
+  }
+
+  a {
+    margin-top: 4px;
+    padding: 6px 12px;
+    font-size: 20px;
+    background-color: $primary;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: $secondary;
+  font-size: 48px;
+}
+
+.feature {
+  padding: 80px 0;
+  background-color: $pink;
+
+  h2 {
+    text-align: center;
+    color: $secondary;
+    font-size: 48px;
+  }
+
+  .list-group {
+    margin-top: 32px;
+    align-items: flex-start;
+
+  }
+
+  .list-item {
+    width: calc(25% - 18px);
+    margin-right: 24px;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      height: 83px;
+    }
+
+    h3 {
+      margin-top: 24px;
+      font-size: 24px;
+
+      color: $secondary;
+    }
+
+    p {
+
+      margin-top: 8px;
+      text-align: left;
+
+
+    }
+  }
+}
+
+.classic {
+  padding: 80px 0;
+
+  &-item {
+    text-align: center;
+    margin-right: 24px;
+    width: 33%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .classic-img {
+      max-height: 416px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+
+    .title {
+      color: $primary;
+      font-size: 48px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
+
+.design {
+  padding: 80px 0;
+  background: center/cover no-repeat url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+
+  h2 {
+    color: #fff;
+  }
+
+  .card {
+    max-width: 50%;
+    background-color: #fff;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    h3 {
+      color: $primary;
+      font-size: 48px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
+
+.recommend {
+  padding: 80px 0;
+
+  .card-list {
+    margin-top: 48px;
+    display: flex;
+
+  }
+
+  .card {
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px $light-gray;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .card-text {
+      padding: 16px 16px 0 16px;
+      flex-grow: 1;
+    }
+
+    p {
+
+      margin-top: 8px;
+    }
+
+    .date {
+      padding: 72px 16px 16px;
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+
+}
+
+.contact {
+  padding: 80px 0;
+  background-color: $pink;
+
+  .form-wrapper {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  p {
+    margin: 48px 0 24px;
+    font-size: 20px;
+
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    .label {
+      margin-bottom: 8px;
+    }
+    .form-input {
+      padding: 6px 12px;
+      background-color: $pink;
+    }
+   
+  }
+  .submit-btn {
+    margin-top: 64px;
+    padding: 16px 176px;
+    color: #fff;
+    background-color: $primary;
+    
+  }
+}
+
