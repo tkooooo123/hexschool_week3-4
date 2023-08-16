@@ -8,7 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp"
     rel="stylesheet" />
-  <title>index</title>
+  <title>眼鏡官網</title>
 </head>
 
 <body>
@@ -93,15 +93,22 @@
         <ul class="card-list d-flex">
           <li class="card">
             <img
+              class="d-sm-block d-none"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
               alt="">
+              <img 
+              class="d-sm-none d-block"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true" alt="">
             <h3>DOUBLE A+</h3>
           </li>
           <li class="card">
-            <img
+            <img class="d-sm-block d-none"
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
               alt="">
-            <h3>DOUBLE A+</h3>
+              <img 
+              class="d-sm-none d-block"
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true" alt="">
+            <h3>YOUTH</h3>
           </li>
         </ul>
       </div>
@@ -175,11 +182,12 @@
             </div>
             <div class="input-group">
               <label class="label" for="response">意見反應</label>
-              <textarea class="form-input" type="text" id="response" name="response" rows="8" placeholder="請輸入您的意見"></textarea>
+              <textarea class="form-input" type="text" id="response" name="response" rows="8"
+                placeholder="請輸入您的意見"></textarea>
             </div>
-            <div class="">
+            <div class="agree">
               <input class="form-input checkbox" type="checkbox" name="agree">
-              <label class="lagel agree" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+              <label class="lagel" for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
             </div>
             <div class="d-flex">
               <a href="#" class="submit-btn">確認送出</a>

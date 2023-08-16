@@ -15,13 +15,28 @@
   h1 {
     font-size: 64px;
     color: $secondary;
+    font-weight: bold;
   }
 
   a {
+    display: inline-block;
     margin-top: 4px;
     padding: 6px 12px;
     font-size: 20px;
     background-color: $primary;
+  }
+
+  @include tablet {
+    background: center/cover no-repeat url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  }
+  @include phone {
+    padding: 144px 0;
+    p {
+      font-size: 16px;
+    }
+    h1 {
+      font-size:36px;
+    }
   }
 }
 
@@ -29,22 +44,19 @@ h2 {
   text-align: center;
   color: $secondary;
   font-size: 48px;
+  font-weight: 900;
 }
 
 .feature {
   padding: 80px 0;
   background-color: $pink;
 
-  h2 {
-    text-align: center;
-    color: $secondary;
-    font-size: 48px;
-  }
 
   .list-group {
     margin-top: 32px;
     align-items: flex-start;
 
+  
   }
 
   .list-item {
@@ -71,15 +83,38 @@ h2 {
 
       margin-top: 8px;
       text-align: left;
+    }
 
+  
+  }
+  @include tablet {
+    .list-group {
+      flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .list-item {
+      width: calc(50% - 12px);
+      margin-right: 0;
+    }
 
+  }
+  @include phone {
+    padding: 40px 0;
+    .list-item {
+      width: 100%;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 .classic {
   padding: 80px 0;
-
+  &-list {
+    margin-top: 48px;
+  }
   &-item {
     text-align: center;
     margin-right: 24px;
@@ -90,13 +125,13 @@ h2 {
     }
 
     .classic-img {
-      max-height: 416px;
+      max-width: 416px;
+      margin: 0 auto;
 
       img {
         max-width: 100%;
       }
     }
-
 
     .title {
       color: $primary;
@@ -104,6 +139,23 @@ h2 {
       font-weight: 900;
       font-style: italic;
     }
+  }
+
+  @include tablet {
+    .classic-list {
+      flex-direction: column;
+    }
+    .classic-item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 24px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include phone {
+    padding: 40px 0;
   }
 }
 
@@ -113,6 +165,10 @@ h2 {
 
   h2 {
     color: #fff;
+  }
+
+  .card-list {
+    margin-top: 48px;
   }
 
   .card {
@@ -131,6 +187,27 @@ h2 {
       font-style: italic;
     }
   }
+
+  @include tablet {
+    background: center/cover no-repeat url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+
+    .card-list {
+      flex-direction: column;
+    }
+
+    .card {
+      max-width: 100%;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include phone {
+    padding: 40px 0;
+  }
+  
 }
 
 .recommend {
@@ -175,6 +252,25 @@ h2 {
     }
   }
 
+  @include tablet {
+    padding-bottom: 56px;
+    .card-list {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: calc(50% - 12px);
+      margin-right: 0;
+      margin-bottom: 24px;
+    }
+  }
+  @include phone {
+    padding: 40px 0 16px;
+    .card {
+      width: 100%;
+    }
+  }
 }
 
 .contact {
@@ -191,25 +287,64 @@ h2 {
     font-size: 20px;
 
   }
+
   .input-group {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
+
     .label {
       margin-bottom: 8px;
     }
+
     .form-input {
       padding: 6px 12px;
       background-color: $pink;
     }
-   
+
   }
+  .agree {
+    display: flex;
+    align-items: start;
+  }
+  .checkbox {
+    margin: 6px 3px 3px;
+  }
+
   .submit-btn {
     margin-top: 64px;
     padding: 16px 176px;
     color: #fff;
     background-color: $primary;
-    
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+  @include tablet {
+   .form-wrapper {
+    width: 75%;
+    p {
+      margin: 24px 0;
+    }
+   }
+  }
+  @include phone {
+    padding: 40px 0;
+    .form-wrapper {
+      width: 100%;
+    }
+    .submit-btn {
+      margin-top: 24px;
+      width: 100%;
+      padding: 16px 0;
+      text-align: center;
+    }
   }
 }
 
+@include phone {
+  h2 {
+    font-size: 24px;
+  }
+}
