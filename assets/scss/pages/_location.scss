@@ -1,0 +1,101 @@
+.location {
+    padding: 96px 0 32px;
+    @include phone {
+       padding: 40px 0 24px;
+    }
+
+    h1 {
+        padding-left: 16px;
+        font-size: 48px;
+        font-weight: bold;
+        border-left: 8px solid $primary;
+        @include phone {
+            font-size: 24px;
+        }
+    }
+
+    .form-group {
+        margin-top: 32px;
+        font-size: 24px;
+        @include phone {
+            font-size: 16px;
+        }
+
+        label {
+            margin-right: 28px;
+        }
+
+        select {
+            height: 38px;
+            width: 304px;
+            font-size: 18px;
+            @include phone {
+                width: 276px;
+            }
+        }
+    }
+
+    .card-list {
+        margin-top: 40px;
+        justify-content: start;
+
+        @include tablet {
+            justify-content: space-between;
+
+        }
+    }
+
+    .list-item {
+        width: calc(33.2% - 16px);
+        margin-bottom: 48px;
+        margin-right: 24px;
+        border: 1px solid #00000020;
+
+        @include tablet {
+            width: calc(50% - 12px);
+            margin-right: 0;
+
+        }
+        @include phone {
+            width: 100%;
+        }
+    }
+
+    .list-item:nth-child(3) {
+        margin-right: 0;
+    }
+
+    .location-img {
+        max-width: 100%;
+    }
+
+    .location-title {
+        padding: 8px 24px;
+        font-size: 24px;
+    }
+
+    .location-content {
+        padding: 16px 24px;
+        border-top: 1px solid #00000020;
+    }
+
+
+
+    .material-icons-outlined {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+
+    .detail {
+        display: inline-block;
+        width: 100%;
+        padding: 16px 0;
+        text-align: center;
+        background-color: #000;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
