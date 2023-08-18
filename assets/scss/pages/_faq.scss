@@ -1,0 +1,36 @@
+.faq {
+    padding: 96px 0 48px;
+    @include phone {
+        padding: 40px 0 ;
+     }
+    h1 {
+        padding-left: 16px;
+        font-size: 48px;
+        font-weight: bold;
+        border-left: 8px solid $primary;
+        @include phone {
+            font-size: 24px;
+        }
+    }
+    h2 {
+        font-size: 24px;
+        text-align: left;
+        margin: 32px 0 24px;
+        color: black;
+        @include phone {
+           margin-top: 24px;
+        }
+    }
+    .question-title {
+        margin-bottom: 8px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .question-text {
+        margin-bottom: 32px;
+        white-space: pre-line;
+        @include phone {
+           margin-bottom: 24px;
+         }
+    }
+}

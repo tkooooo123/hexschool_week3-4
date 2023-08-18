@@ -23,6 +23,9 @@
 
         label {
             margin-right: 28px;
+            @include phone {
+                margin-right: 8px;
+            }
         }
 
         select {
