@@ -18,6 +18,13 @@
     }
   }
 }
+@include tablet {
+  .nav {
+    .nav-item {
+      margin-right: 48px;
+    }
+  }
+}
 
 @include phone {
   .header .container {
@@ -33,6 +40,7 @@
       margin-left: 15px;
       height: 80px;
       justify-content: start;
+      align-items: center;
     }
     .nav-list {
       flex-wrap: wrap;
